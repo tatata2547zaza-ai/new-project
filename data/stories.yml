@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+
+- story: provide health profile
+  steps:
+    - intent: inform_profile
+    - action: action_calculate_bmi
+
+- story: ask bmi information
+  steps:
+    - intent: ask_bmi
+    - action: utter_bmi_info
+
+- story: ask food recommendation directly
+  steps:
+    - intent: ask_food_recommendation
+    - action: action_recommend_food
+
+- story: calculate bmi then ask food recommendation
+  steps:
+    - intent: inform_profile
+    - action: action_calculate_bmi
+    - intent: ask_food_recommendation
+    - action: action_recommend_food
+
+- story: provide full health profile
+  steps:
+    - intent: inform_health_profile
+    - action: action_calculate_health_metrics
+
+- story: ask bmr tdee info
+  steps:
+    - intent: ask_bmr_tdee
+    - action: utter_bmr_tdee_info
+
+- story: ask workout recommendation directly
+  steps:
+    - intent: ask_workout_recommendation
+    - action: action_recommend_workout
+
+- story: calculate health metrics then ask workout recommendation
+  steps:
+    - intent: inform_health_profile
+    - action: action_calculate_health_metrics
+    - intent: ask_workout_recommendation
+    - action: action_recommend_workout

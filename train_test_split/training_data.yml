@@ -1,0 +1,106 @@
+version: "3.1"
+nlu:
+- intent: ask_bot
+  examples: |
+    - ทำอะไรได้บ้าง
+    - คุณคือใคร
+    - ช่วยอะไรได้บ้าง
+- intent: nlu_fallback
+  examples: |
+    - พูดอีกครั้ง
+    - ช่วยอธิบายได้ไหม
+    - ไม่เข้าใจ
+- intent: goodbye
+  examples: |
+    - ไปก่อนนะ
+    - ลาก่อน
+    - เจอกันใหม่
+    - bye
+- intent: ask_bmi
+  examples: |
+    - อธิบาย bmi ให้หน่อย
+    - bmi คืออะไร
+    - ดัชนีมวลกายคืออะไร
+    - ค่า bmi คืออะไร
+    - bmi หมายถึงอะไร
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - ดีจ้า
+    - สวัส
+    - สวัสดี
+- intent: inform_health_profile
+  examples: |
+    - [ชาย](gender) [25](age) [70](weight) [175](height) [ลดน้ำหนัก](goal) [ปานกลาง](activity_level)
+    - [ชาย](gender) [24](age) [68](weight) [172](height)
+    - [เพศหญิง](gender) อายุ [22](age) น้ำหนัก [48](weight) ส่วนสูง [158](height) [ลดความอ้วน](goal) [เบา](activity_level)
+    - [ชาย](gender) อายุ [35](age) [80](weight) [180](height) [ลดน้ำหนัก](goal) [ปานกลาง](activity_level)
+    - [หญิง](gender) [20](age) หนัก [50](weight) สูง [162](height)
+    - [เพศชาย](gender) อายุ [28](age) หนัก [65](weight) สูง [170](height) [เพิ่มกล้ามเนื้อ](goal) [หนัก](activity_level)
+- intent: ask_food_recommendation
+  examples: |
+    - แนะนำอาหารหน่อย
+    - แนะนำเมนูอาหารตามค่า bmi หน่อย
+    - แนะนำของกินหน่อย
+    - อยากได้เมนูอาหารลดน้ำหนัก
+    - ควรทานอะไรดี
+    - เมนูอาหารแนะนำ
+- intent: ask_bmr_tdee
+  examples: |
+    - คำนวณ bmr ให้หน่อย
+    - bmr คืออะไร
+    - tdee คืออะไร
+    - ควรดื่มน้ำวันละเท่าไหร่
+    - อธิบาย bmr tdee
+    - ต้องกินวันละกี่แคล
+    - bmr tdee หมายถึงอะไร
+- intent: ask_bmi_history
+  examples: |
+    - เคยวัด BMI ได้เท่าไหร่
+    - ย้อนดูผล BMI
+    - ดูประวัติน้ำหนัก
+    - ดูผล BMI ที่ผ่านมา
+    - ความก้าวหน้า BMI
+    - ขอดูประวัติสุขภาพ
+    - ผลการวัดที่ผ่านมา
+    - ดูค่า BMI เก่า
+    - bmi ครั้งก่อน
+    - ผลเก่าๆ ของฉัน
+    - เช็กพัฒนาการ
+- intent: ask_workout_recommendation
+  examples: |
+    - ออกกำลังกายเพิ่มกล้ามเนื้อทำยังไง
+    - ขอตารางออกกำลังกาย
+    - 🏋️‍♂️ ออกกำลังกาย
+    - แนะนำออกกำลังกายหน่อย
+    - แนะนำการออกกำลังกายหน่อย
+    - 🏋️‍♂️ แนะนำออกกำลังกาย
+    - แนะนำวิธีออกกำลังกายลดน้ำหนัก
+    - ออกกำลังกายหน่อย
+    - ควรออกกำลังกายสัปดาห์ละกี่วัน
+    - ออกกำลังกายเพิ่มกล้าม
+    - ตารางออกกำลังกาย
+    - อยากได้ตารางออกกำลังกาย
+    - ออกกำลังกาย
+    - ควรออกกำลังกายยังไงดี
+- intent: inform_profile
+  examples: |
+    - สูง [172](height) หนัก [68](weight) [ลดน้ำหนัก](goal)
+    - สูง [175](height) หนัก [70](weight) [ลดน้ำหนัก](goal) [ปานกลาง](activity_level)
+    - หนัก [80](weight) ส่วนสูง [180](height) [คุมน้ำหนัก](goal) [ปานกลาง](activity_level)
+    - หนัก [75](weight) สูง [180](height)
+    - น้ำหนัก [55](weight) สูง [160](height) [ลดความอ้วน](goal) [เบา](activity_level)
+    - [52](weight) [165](height) [ลดน้ำหนัก](goal) [เบา](activity_level)
+    - [90](weight) [185](height) [ลดความอ้วน](goal) [หนักมาก](activity_level)
+    - ส่วนสูง [165](height) น้ำหนัก [50](weight) [ฟิตหุ่น](goal) [หนัก](activity_level)
+    - สูง [180](height) หนัก [75](weight)
+    - หนัก [45](weight) สูง [155](height) [ลดน้ำหนัก](goal)
+    - สูง [160](height) หนัก [50](weight)
+    - [72](weight) [175](height) [ลดน้ำหนัก](goal) [เบา](activity_level)
+    - ส่วนสูง [160](height) หนัก [50](weight)
+    - น้ำหนัก [60](weight) สูง [170](height) [เพิ่มกล้ามเนื้อ](goal) [ปานกลาง](activity_level)
+    - น้ำหนัก [62](weight) สูง [168](height)
+    - [85](weight) [178](height) [เพิ่มกล้ามเนื้อ](goal)
+    - สูง [165](height) หนัก [55](weight) [เพิ่มกล้ามเนื้อ](goal) [ปานกลาง](activity_level)
+    - ส่วนสูง [170](height) น้ำหนัก [60](weight) [คุมน้ำหนัก](goal) [เบา](activity_level)

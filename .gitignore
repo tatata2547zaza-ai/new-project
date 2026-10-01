@@ -1,0 +1,75 @@
+# ==========================================
+# Rasa Chatbot & Python .gitignore
+# ==========================================
+
+# Virtual Environments
+rasa_env/
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Rasa Cache & Models
+.rasa/
+models/
+*.tar.gz
+.rasa.db
+story_graph.png
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+bmi.db
+actions/bmi.db
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDEs and Code Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/

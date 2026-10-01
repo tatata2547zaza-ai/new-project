@@ -1,0 +1,59 @@
+version: "3.1"
+
+rules:
+
+- rule: greet and ask profile
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_ask_profile
+
+- rule: calculate bmi when profile provided
+  steps:
+    - intent: inform_profile
+    - action: action_calculate_bmi
+
+- rule: calculate health metrics when full profile provided
+  steps:
+    - intent: inform_health_profile
+    - action: action_calculate_health_metrics
+
+- rule: recommend workout when requested
+  steps:
+    - intent: ask_workout_recommendation
+    - action: action_recommend_workout
+
+- rule: respond to ask bot
+  steps:
+    - intent: ask_bot
+    - action: utter_ask_bot
+
+- rule: say goodbye anytime
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: handle food recommendation request
+  steps:
+    - intent: ask_food_recommendation
+    - action: action_recommend_food
+
+- rule: handle bmr tdee info request
+  steps:
+    - intent: ask_bmr_tdee
+    - action: utter_bmr_tdee_info
+
+- rule: handle bmi info request
+  steps:
+    - intent: ask_bmi
+    - action: utter_bmi_info
+
+- rule: show bmi history
+  steps:
+    - intent: ask_bmi_history
+    - action: action_show_bmi_history
+
+- rule: handle nlu fallback
+  steps:
+    - intent: nlu_fallback
+    - action: action_custom_fallback

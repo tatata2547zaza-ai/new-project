@@ -1,0 +1,261 @@
+[
+  {
+    "text": "หญิง 30 55 160 คุมน้ำหนัก เบา",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "หญิง",
+        "entity": "gender"
+      },
+      {
+        "start": 5,
+        "end": 7,
+        "value": "30",
+        "entity": "age"
+      },
+      {
+        "start": 8,
+        "end": 10,
+        "value": "55",
+        "entity": "weight"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "160",
+        "entity": "height"
+      },
+      {
+        "start": 15,
+        "end": 25,
+        "value": "คุมน้ำหนัก",
+        "entity": "goal"
+      },
+      {
+        "start": 26,
+        "end": 29,
+        "value": "เบา",
+        "entity": "activity_level"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "gender",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9987884163856506,
+        "value": "หญิง",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "weight",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.5148634314537048,
+        "value": "30",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "weight",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.5107844471931458,
+        "value": "55",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "height",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.5127066373825073,
+        "value": "160",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "goal",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.9996626377105713,
+        "value": "คุมน้ำหนัก",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "activity_level",
+        "start": 26,
+        "end": 29,
+        "confidence_entity": 0.999534010887146,
+        "value": "เบา",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "หนัก 65 สูง 170 เพิ่มกล้ามเนื้อ หนักมาก",
+    "entities": [
+      {
+        "start": 5,
+        "end": 7,
+        "value": "65",
+        "entity": "weight"
+      },
+      {
+        "start": 12,
+        "end": 15,
+        "value": "170",
+        "entity": "height"
+      },
+      {
+        "start": 16,
+        "end": 31,
+        "value": "เพิ่มกล้ามเนื้อ",
+        "entity": "goal"
+      },
+      {
+        "start": 32,
+        "end": 39,
+        "value": "หนักมาก",
+        "entity": "activity_level"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "height",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.47840267419815063,
+        "value": "65",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "height",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.474471777677536,
+        "value": "170",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "goal",
+        "start": 16,
+        "end": 31,
+        "confidence_entity": 0.9995226860046387,
+        "value": "เพิ่มกล้ามเนื้อ",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "activity_level",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.9994070529937744,
+        "value": "หนักมาก",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "สูง 155 หนัก 45 ลดน้ำหนัก เบา",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "155",
+        "entity": "height"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "value": "45",
+        "entity": "weight"
+      },
+      {
+        "start": 16,
+        "end": 25,
+        "value": "ลดน้ำหนัก",
+        "entity": "goal"
+      },
+      {
+        "start": 26,
+        "end": 29,
+        "value": "เบา",
+        "entity": "activity_level"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "height",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.4807548522949219,
+        "value": "155",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "height",
+        "start": 13,
+        "end": 15,
+        "confidence_entity": 0.47672533988952637,
+        "value": "45",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "goal",
+        "start": 16,
+        "end": 25,
+        "confidence_entity": 0.9996170997619629,
+        "value": "ลดน้ำหนัก",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "activity_level",
+        "start": 26,
+        "end": 29,
+        "confidence_entity": 0.9995689988136292,
+        "value": "เบา",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+version: "3.1"
+nlu:
+- intent: ask_bot
+  examples: |
+    - บอทนี้ทำอะไรได้
+- intent: nlu_fallback
+  examples: |
+    - อะไรนะ
+- intent: goodbye
+  examples: |
+    - บ๊ายบาย
+- intent: ask_bmi
+  examples: |
+    - bmi แปลว่าอะไร
+- intent: greet
+  examples: |
+    - สวสด
+    - หวัดดี
+- intent: inform_health_profile
+  examples: |
+    - [หญิง](gender) [30](age) [55](weight) [160](height) [คุมน้ำหนัก](goal) [เบา](activity_level)
+- intent: ask_food_recommendation
+  examples: |
+    - กินอะไรดี
+    - แนะนำอาหารที่กินแล้วไม่อ้วนหน่อย
+- intent: ask_bmr_tdee
+  examples: |
+    - คำนวณ tdee ให้หน่อย
+- intent: ask_bmi_history
+  examples: |
+    - ดูประวัติ BMI หน่อย
+    - ประวัติ BMI ของฉัน
+    - บันทึก BMI ที่ผ่านมา
+- intent: ask_workout_recommendation
+  examples: |
+    - แนะนำออกกำลังกาย
+    - ออกกำลังกายแบบไหนดี
+    - ออกกำลังกายลดน้ำหนัก
+    - ตารางออกกำลังกายแนะนำ
+- intent: inform_profile
+  examples: |
+    - หนัก [65](weight) สูง [170](height) [เพิ่มกล้ามเนื้อ](goal) [หนักมาก](activity_level)
+    - สูง [170](height) น้ำหนัก [68](weight)
+    - [48](weight) [158](height) [รักษารูปร่าง](goal) [เบา](activity_level)
+    - สูง [155](height) หนัก [45](weight) [ลดน้ำหนัก](goal) [เบา](activity_level)

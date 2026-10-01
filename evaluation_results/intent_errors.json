@@ -1,0 +1,10 @@
+[
+  {
+    "text": "อะไรนะ",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "inform_health_profile",
+      "confidence": 0.0001270925858989358
+    }
+  }
+]
