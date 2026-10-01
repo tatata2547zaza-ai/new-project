@@ -1581,3 +1581,26 @@ class ActionCustomFallback(Action):
         )
 
         return []
+
+class ActionClearData(Action):
+    def name(self) -> Text:
+        return "action_clear_data"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        user_id = tracker.sender_id
+        
+        try:
+            from rasa_sdk.events import Restarted
+            conn = sqlite3.connect(DB_PATH)
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM bmi_history WHERE user_id = ?", (user_id,))
+            conn.commit()
+            conn.close()
+            dispatcher.utter_message(text="ลบข้อมูลของคุณออกจากระบบเรียบร้อยแล้วค่ะ เริ่มต้นใหม่ได้เลย! 😊")
+            return [Restarted()]
+        except Exception as e:
+            dispatcher.utter_message(text=f"ขออภัยค่ะ เกิดข้อผิดพลาดในการลบข้อมูล: {e}")
+            return []

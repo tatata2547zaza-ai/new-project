@@ -6,7 +6,6 @@ rules:
   steps:
     - intent: greet
     - action: utter_greet
-    - action: utter_ask_profile
 
 - rule: calculate bmi when profile provided
   steps:
@@ -57,3 +56,8 @@ rules:
   steps:
     - intent: nlu_fallback
     - action: action_custom_fallback
+
+- rule: handle clear data
+  steps:
+    - intent: clear_data
+    - action: action_clear_data
